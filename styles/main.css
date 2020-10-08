@@ -1,0 +1,142 @@
+@font-face {
+    font-family: '8-bit';
+    src: url('../fonts/8-bit-pusab.ttf');
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../fonts/SpaceMono-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../fonts/SpaceMono-Bold.ttf');
+    font-weight: bold;
+}
+
+body {
+    color: black;
+    /* background-color: #2e2823; */
+    background-color: #79caf9;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.layer {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#clouds {
+    background-repeat: no-repeat;
+    background-image: url("../images/clouds.gif");
+}
+
+/*
+.s-clouds {
+    background-image: url("../images/small-clouds.png");
+}
+
+.m-clouds {
+    background-image: url("../images/medium-clouds.png");
+}
+
+.l-clouds {
+    background-image: url("../images/large-clouds.png");
+}
+*/
+
+#bg-trees {
+    background-image: url("../images/bg-trees.png");
+}
+
+#md-trees {
+    background-image: url("../images/md-trees.png");
+}
+
+#fg-trees {
+    background-image: url("../images/fg-trees.png");
+}
+
+#grass {
+    background-image: url("../images/grass.png");
+}
+
+#brendan {
+    width: 200px;
+    height: 200px;
+    top: calc(70vh - 250px);
+}
+
+#pikachu {
+    width: 140px;
+    height: 100px;
+    top: calc(70vh - 10px);
+    background-image: url("../images/pikachu.gif");
+}
+
+.intro-container {
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.intro-container p {
+    color: #4a413b;
+    margin-bottom: 0;
+    font-family: 'Space Mono';
+    font-size: 1.5rem;
+}
+.intro-container h1 {
+    color: #3b444a;
+    margin-top: 0;
+    font-family: '8-bit';
+    letter-spacing: 10px;
+    font-size: 4.5rem;
+}
+
+
+.categories-container {
+    height: 50vh;
+    background-color: #151315;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h1 {
+    font-family: 'Space Mono';
+    line-height: 10px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.about p {
+    font-family: 'Space Mono';
+    color: #ffffff;
+    font-size: 12px;
+}
